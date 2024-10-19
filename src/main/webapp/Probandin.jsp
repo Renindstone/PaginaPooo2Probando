@@ -7,6 +7,6 @@
 <title>Mi primera pagina web</title>
 </head>
 <body>
-	<p>El pepe y ete sech</p>
+	<p>El pepe y ete sech pepep</p>
 </body>
 </html>
