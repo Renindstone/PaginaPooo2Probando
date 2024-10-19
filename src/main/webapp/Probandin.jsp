@@ -11,5 +11,6 @@
 	<p>Mi pagina p causa pa que veas el nivel</p>
 	
 	<a href="https://youtu.be/iY_nnefHKIY?si=dSpllFGrKbqvA_7m">Link a videito</a>
+	<a href="gamers-outlet.net">Link a keys baratas</a>
 </body>
 </html>
