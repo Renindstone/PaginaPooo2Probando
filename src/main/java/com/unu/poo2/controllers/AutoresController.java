@@ -9,8 +9,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.unu.poo2.beans.Autor;
 import com.unu.poo2.model.AutoresModel;
 
 public class AutoresController extends HttpServlet {
@@ -71,6 +74,13 @@ public class AutoresController extends HttpServlet {
 	 private void listar(HttpServletRequest request, HttpServletResponse response) {
 		 try {
 				request.setAttribute("listaAutores", modelo.listarAutores());
+				
+				Iterator<Autor> it = modelo.listarAutores().iterator();
+				while (it.hasNext()) {
+					Autor a = it.next();
+					System.out.println(a.getCodigoAutor()+" "+a.getNombreAutor()+" "+a.getNacionalidad());
+					
+				}
 				request.getRequestDispatcher("/AutoresModel/listaAutores.jsp").forward(request, response);
 		 	} catch (ServletException | IOException ex) {
 			 Logger.getLogger(AutoresController.class.getName()).log(Level.SEVERE, null, ex);

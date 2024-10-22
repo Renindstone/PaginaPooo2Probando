@@ -1,22 +1,26 @@
 package com.unu.poo2.beans;
 
 public class Autor {
-	private String codigoAutor;
+	private int idAutor;
 	private String nombreAutor;
 	private String nacionalidad;
 	
-	public Autor(String codigoAutor, String nombreAutor, String nacionalidad) {
-		this.codigoAutor = codigoAutor;
+	public Autor(int idAutor, String nombreAutor, String nacionalidad) {
+		this.idAutor = idAutor;
 		this.nombreAutor = nombreAutor;
 		this.nacionalidad = nacionalidad;
 	}
-
-	public String getCodigoAutor() {
-		return codigoAutor;
+	
+	public Autor() {
+		this(0, "", "");
 	}
 
-	public void setCodigoAutor(String codigoAutor) {
-		this.codigoAutor = codigoAutor;
+	public int getCodigoAutor() {
+		return idAutor;
+	}
+
+	public void setCodigoAutor(int idAutor) {
+		this.idAutor = idAutor;
 	}
 
 	public String getNombreAutor() {
