@@ -22,13 +22,12 @@ public class Conexion {
 	
 	public void cerrarConexion() {
 		try {
-			if (conexion!=null && conexion.isClosed()) {
+			if (conexion!=null && !conexion.isClosed()) {
 				conexion.close();
 				System.out.println("Conexion cerrada");
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
-			
 		}
 	}
 }

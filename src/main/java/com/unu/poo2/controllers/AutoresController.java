@@ -35,22 +35,22 @@ public class AutoresController extends HttpServlet {
 			 case "listar":
 				 listar(request, response);
 			 break;
-			 /*
+			 
 			 case "nuevo":
-				 request.getRequestDispatcher("/autores/nuevoAutor.jsp").forward(request, response);
+				 request.getRequestDispatcher("/AutoresController/NuevoAutor.jsp").forward(request, response);
 			 break;
 			 case "insertar":
-				 insertar(request, response);
+				 //insertar(request, response);
 			 break;
 			 case "obtener":
-				 obtener(request, response);
+				 //obtener(request, response);
 			 break;
 			 case "modificar":
-				 modificar(request, response);
+				 //modificar(request, response);
 			 break;
 			 case "eliminar":
-				 eliminar(request, response);
-			 break;*/
+				 //eliminar(request, response);
+			 break;
 			 }
 		 }
 	 }
@@ -81,7 +81,7 @@ public class AutoresController extends HttpServlet {
 					System.out.println(a.getCodigoAutor()+" "+a.getNombreAutor()+" "+a.getNacionalidad());
 					
 				}
-				request.getRequestDispatcher("/AutoresModel/listaAutores.jsp").forward(request, response);
+				request.getRequestDispatcher("/AutoresController/listaAutores.jsp").forward(request, response);
 		 	} catch (ServletException | IOException ex) {
 			 Logger.getLogger(AutoresController.class.getName()).log(Level.SEVERE, null, ex);
 		 	}

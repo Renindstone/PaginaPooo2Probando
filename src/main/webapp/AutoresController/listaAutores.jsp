@@ -11,6 +11,9 @@
 <title>Listando probando</title>
 </head>
 <body>
+
+	<%String url = "http://localhost:8080/PaginaWebProbando/"; %>
+	<a type="button" href="<%=url%>AutoresController?op=nuevo">Nuevo autor</a>
 	<table>
 		<thead>
 			<tr>
@@ -35,17 +38,16 @@
 			    <%
 			    	}
 			    }else{
-			    	
+			    %>
+			    	<tr>
+					<td>No hay datos</td>
+					<td>No hay datos</td>
+					<td>No hay datos</td>
+					</tr>
+				<%
 			    }
-			%>
-			
-			<tr>
-				<td>No hay datos</td>
-				<td>No hay datos</td>
-				<td>No hay datos</td>
-			</tr>
-			
-					
+				%>
+
 		</tbody>
 	</table>
 </body>
